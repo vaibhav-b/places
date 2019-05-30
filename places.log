@@ -1,0 +1,142 @@
+2019-05-30 23:54:08.687  INFO 1300 --- [main] c.b.v.p.PlacesControllerTest             : Starting PlacesControllerTest on Lenovo-PC with PID 1300 (started by Subodh in F:\vbhalke\dev\workspace\places-service)
+2019-05-30 23:54:08.692  INFO 1300 --- [main] c.b.v.p.PlacesControllerTest             : No active profile set, falling back to default profiles: default
+2019-05-30 23:54:08.768  INFO 1300 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4d1bf319: startup date [Thu May 30 23:54:08 IST 2019]; root of context hierarchy
+2019-05-30 23:54:11.936  INFO 1300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:54:12.465  INFO 1300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4d1bf319: startup date [Thu May 30 23:54:08 IST 2019]; root of context hierarchy
+2019-05-30 23:54:12.626  INFO 1300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/place/search/{input}],methods=[GET]}" onto public java.lang.String com.bhalke.vaibhav.placesservice.PlacesController.getSearchPlace(java.lang.String)
+2019-05-30 23:54:12.630  INFO 1300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/place/details/{place_id}],methods=[GET]}" onto public java.lang.String com.bhalke.vaibhav.placesservice.PlacesController.getPlaceDetails(java.lang.String)
+2019-05-30 23:54:12.637  INFO 1300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-30 23:54:12.641  INFO 1300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-30 23:54:12.698  INFO 1300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:54:12.698  INFO 1300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:54:13.473  INFO 1300 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2019-05-30 23:54:13.475  INFO 1300 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2019-05-30 23:54:13.509  INFO 1300 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 33 ms
+2019-05-30 23:54:13.592  INFO 1300 --- [main] c.b.v.p.PlacesControllerTest             : Started PlacesControllerTest in 5.537 seconds (JVM running for 9.534)
+2019-05-30 23:54:14.056  INFO 1300 --- [main] c.b.v.placesservice.PlacesController     : Input = ChIJpaz2fx_BwjsR8OBdBo34Mtg:: API KEY = AIzaSyBUAzx2rt5Djb-IJm8bEm7AJwdVaj7d3IQ
+2019-05-30 23:54:15.956  INFO 1300 --- [main] c.b.v.placesservice.PlacesController     : {
+   "candidates" : [],
+   "status" : "ZERO_RESULTS"
+}
+
+2019-05-30 23:54:16.126  INFO 1300 --- [main] c.b.v.placesservice.PlacesController     : Input = tibco pune:: API KEY = AIzaSyBUAzx2rt5Djb-IJm8bEm7AJwdVaj7d3IQ
+2019-05-30 23:54:16.923  INFO 1300 --- [main] c.b.v.placesservice.PlacesController     : {
+   "candidates" : [
+      {
+         "formatted_address" : "Deepak Complex, 2nd & 3rd Binarius, National Games Road, Shastrinagar, Yerawada, Pune, Maharashtra 411006, India",
+         "geometry" : {
+            "location" : {
+               "lat" : 18.5558972,
+               "lng" : 73.89191099999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 18.55657282989272,
+                  "lng" : 73.89328357989271
+               },
+               "southwest" : {
+                  "lat" : 18.55387317010728,
+                  "lng" : 73.89058392010728
+               }
+            }
+         },
+         "name" : "TIBCO Software India Pvt. Ltd",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 4608,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108367541802405158702/photos\"\u003eAkshay Abhang\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAApEBB3WbDXt6a55SMc84dy9jp0rayZt1XgaEvCtXo9vhswvYOfX0kgSeUIpSoCYZMoQ0P5m54hfXZJsFzf4k-RORQJCux7M34QMnN0QA45ey7bjdVcM-QM88Ilij19BiCEhDPCagjIPcAREImMAilD0POGhSIG1_MjzIiXSASHXYDWG34kX6gTA",
+               "width" : 2592
+            }
+         ],
+         "rating" : 4.4
+      }
+   ],
+   "status" : "OK"
+}
+
+2019-05-30 23:54:17.294  INFO 1300 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4d1bf319: startup date [Thu May 30 23:54:08 IST 2019]; root of context hierarchy
+2019-05-30 23:55:53.433  INFO 5236 --- [main] c.b.v.p.PlacesControllerTest             : Starting PlacesControllerTest on Lenovo-PC with PID 5236 (started by Subodh in F:\vbhalke\dev\workspace\places-service)
+2019-05-30 23:55:53.442  INFO 5236 --- [main] c.b.v.p.PlacesControllerTest             : No active profile set, falling back to default profiles: default
+2019-05-30 23:55:53.559  INFO 5236 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6574a52c: startup date [Thu May 30 23:55:53 IST 2019]; root of context hierarchy
+2019-05-30 23:55:56.534  INFO 5236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:55:56.930  INFO 5236 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6574a52c: startup date [Thu May 30 23:55:53 IST 2019]; root of context hierarchy
+2019-05-30 23:55:57.062  INFO 5236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/place/search/{input}],methods=[GET]}" onto public java.lang.String com.bhalke.vaibhav.placesservice.PlacesController.getSearchPlace(java.lang.String)
+2019-05-30 23:55:57.064  INFO 5236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/place/details/{place_id}],methods=[GET]}" onto public java.lang.String com.bhalke.vaibhav.placesservice.PlacesController.getPlaceDetails(java.lang.String)
+2019-05-30 23:55:57.072  INFO 5236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-30 23:55:57.074  INFO 5236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-30 23:55:57.118  INFO 5236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:55:57.119  INFO 5236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:55:57.548  INFO 5236 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2019-05-30 23:55:57.559  INFO 5236 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2019-05-30 23:55:57.576  INFO 5236 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 17 ms
+2019-05-30 23:55:57.638  INFO 5236 --- [main] c.b.v.p.PlacesControllerTest             : Started PlacesControllerTest in 5.573 seconds (JVM running for 9.31)
+2019-05-30 23:55:57.894  INFO 5236 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6574a52c: startup date [Thu May 30 23:55:53 IST 2019]; root of context hierarchy
+2019-05-30 23:56:39.768  INFO 7012 --- [main] c.b.v.p.PlacesControllerTest             : Starting PlacesControllerTest on Lenovo-PC with PID 7012 (started by Subodh in F:\vbhalke\dev\workspace\places-service)
+2019-05-30 23:56:39.773  INFO 7012 --- [main] c.b.v.p.PlacesControllerTest             : No active profile set, falling back to default profiles: default
+2019-05-30 23:56:39.844  INFO 7012 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4d1bf319: startup date [Thu May 30 23:56:39 IST 2019]; root of context hierarchy
+2019-05-30 23:56:43.324  INFO 7012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:56:43.997  INFO 7012 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4d1bf319: startup date [Thu May 30 23:56:39 IST 2019]; root of context hierarchy
+2019-05-30 23:56:44.166  INFO 7012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/place/search/{input}],methods=[GET]}" onto public java.lang.String com.bhalke.vaibhav.placesservice.PlacesController.getSearchPlace(java.lang.String)
+2019-05-30 23:56:44.169  INFO 7012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/place/details/{place_id}],methods=[GET]}" onto public java.lang.String com.bhalke.vaibhav.placesservice.PlacesController.getPlaceDetails(java.lang.String)
+2019-05-30 23:56:44.176  INFO 7012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-30 23:56:44.178  INFO 7012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-30 23:56:44.255  INFO 7012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:56:44.255  INFO 7012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-30 23:56:44.856  INFO 7012 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2019-05-30 23:56:44.858  INFO 7012 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2019-05-30 23:56:44.898  INFO 7012 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 38 ms
+2019-05-30 23:56:45.012  INFO 7012 --- [main] c.b.v.p.PlacesControllerTest             : Started PlacesControllerTest in 5.942 seconds (JVM running for 10.097)
+2019-05-30 23:56:45.408  INFO 7012 --- [main] c.b.v.placesservice.PlacesController     : Input = ChIJpaz2fx_BwjsR8OBdBo34Mtg:: API KEY = AIzaSyBUAzx2rt5Djb-IJm8bEm7AJwdVaj7d3IQ
+2019-05-30 23:56:47.131  INFO 7012 --- [main] c.b.v.placesservice.PlacesController     : {
+   "candidates" : [],
+   "status" : "ZERO_RESULTS"
+}
+
+2019-05-30 23:56:47.322  INFO 7012 --- [main] c.b.v.placesservice.PlacesController     : Input = tibco pune:: API KEY = AIzaSyBUAzx2rt5Djb-IJm8bEm7AJwdVaj7d3IQ
+2019-05-30 23:56:47.532  INFO 7012 --- [main] c.b.v.placesservice.PlacesController     : {
+   "candidates" : [
+      {
+         "formatted_address" : "Deepak Complex, 2nd & 3rd Binarius, National Games Road, Shastrinagar, Yerawada, Pune, Maharashtra 411006, India",
+         "geometry" : {
+            "location" : {
+               "lat" : 18.5558972,
+               "lng" : 73.89191099999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 18.55657282989272,
+                  "lng" : 73.89328357989271
+               },
+               "southwest" : {
+                  "lat" : 18.55387317010728,
+                  "lng" : 73.89058392010728
+               }
+            }
+         },
+         "name" : "TIBCO Software India Pvt. Ltd",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 4608,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108367541802405158702/photos\"\u003eAkshay Abhang\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAApEBB3WbDXt6a55SMc84dy9jp0rayZt1XgaEvCtXo9vhswvYOfX0kgSeUIpSoCYZMoQ0P5m54hfXZJsFzf4k-RORQJCux7M34QMnN0QA45ey7bjdVcM-QM88Ilij19BiCEhDPCagjIPcAREImMAilD0POGhSIG1_MjzIiXSASHXYDWG34kX6gTA",
+               "width" : 2592
+            }
+         ],
+         "rating" : 4.4
+      }
+   ],
+   "status" : "OK"
+}
+
+2019-05-30 23:56:48.305  INFO 7012 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4d1bf319: startup date [Thu May 30 23:56:39 IST 2019]; root of context hierarchy
